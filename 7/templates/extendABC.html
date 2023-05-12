@@ -1,0 +1,15 @@
+<DOCTYPE! html>
+<html>
+    <meta charset= "UTF-8">
+    <body>
+        {% extends 'abc.html' %}
+        {% block content %}
+        {% set words = ["текст"]%}
+            <ul>
+                {% for i in  words %}
+                    <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+        {% endblock  %}
+    </body>
+</html>
